@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Testimonial Page | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+      body {
+        font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        background: #fff;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 1280px;
+        margin: 56px auto 0 auto;
+        padding: 0 32px;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        align-items: flex-start;
+        min-height: 600px;
+      }
+
+      .main-content {
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+        padding: 56px 56px 48px 56px;
+        flex: 1 1 600px;
+        min-width: 400px;
+        max-width: 600px;
+        position: relative;
+        margin-right: 120px;
+      }
+      .main-title-row {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 18px;
+      }
+      .main-title-row .main-star {
+        width: 52px;
+        height: 52px;
+        background: #ffe066;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .main-title-row .main-star img {
+        width: 32px;
+        height: 32px;
+      }
+      .main-title {
+        font-size: 2.8rem;
+        font-weight: 900;
+        color: #22223b;
+        margin-bottom: 0;
+        text-align: left;
+        letter-spacing: -1px;
+      }
+      .main-desc {
+        color: #4a4e69;
+        font-size: 1.18rem;
+        margin-bottom: 32px;
+        text-align: left;
+        line-height: 1.7;
+        max-width: 95%;
+      }
+      .checklist {
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .checklist-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1.09rem;
+        color: #22223b;
+        font-weight: 400;
+        margin-bottom: 0;
+        text-align: left;
+      }
+      .checklist-item img {
+        width: 22px;
+        margin-top: 0;
+      }
+
+      .testimonials {
+        flex: 1 1 420px;
+        min-width: 340px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 32px;
+        position: relative;
+      }
+      .testimonial-card {
+        border-radius: 16px;
+        box-shadow: 0 16px 48px rgba(0,0,0,0.13);
+        padding: 38px 44px 32px 44px;
+        max-width: 420px;
+        min-width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 0;
+      }
+      .testimonial-card.google {
+        align-self: flex-end;
+        margin-bottom: 40px;
+        margin-right: -10px;
+        z-index: 2;
+        box-shadow: 0 16px 48px rgba(0,0,0,0.13), 0 2px 8px rgba(0,0,0,0.04);
+      }
+      .testimonial-card.meta {
+        align-self: flex-start;
+        margin-top: -20px;
+        margin-left: -50px;
+        z-index: 1;
+      }
+      .testimonial-card .brand-row {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 8px;
+      }
+      .testimonial-card .brand-row img {
+        height: 38px;
+        width: auto;
+        margin-bottom: 0;
+      }
+      .testimonial-card .stars {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 0;
+        margin-left: 0;
+      }
+      .testimonial-card .stars img {
+        width: 20px;
+        vertical-align: middle;
+      }
+      .testimonial-card .reviewer {
+        font-weight: 700;
+        color: #22223b;
+        margin-bottom: 2px;
+        font-size: 1.09rem;
+        margin-top: 10px;
+      }
+      .testimonial-card .review {
+        font-size: 1.01rem;
+        color: #6b7280;
+        margin-bottom: 0;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+
+      @media (max-width: 1100px) {
+        .container {
+          flex-direction: column;
+          gap: 32px;
+          align-items: stretch;
+        }
+        .main-content {
+          margin-right: 0;
+        }
+        .testimonials {
+          align-items: center;
+          margin-top: 0;
+        }
+        .testimonial-card:first-child {
+          margin-right: 0;
+        }
+        .testimonial-card:last-child {
+          margin-top: 0;
+        }
+      }
+      @media (max-width: 700px) {
+        .container {
+          padding: 0 4px;
+        }
+        .main-content {
+          padding: 28px 10px 24px 10px;
+        }
+        .testimonials {
+          gap: 18px;
+        }
+        .testimonial-card {
+          padding: 22px 8px 18px 12px;
+          min-width: 0;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="main-content">
+        <div class="main-title-row">
+          <div class="main-star"><span class="main-star"><img src="resources/Star_fill.svg" alt="star" /></span></div>
+          <div><span class="main-title">Reviewers</span></div>
+        </div>
+        <div class="main-desc">
+          Reviewers is where people can access guidelines, checklists, and other tools to assist them in reviewing papers or manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and consistent.
+        </div>
+        <div class="checklist">
+          <div class="checklist-item"><img src="resources/Done_ring_round_fill.svg" alt="check" />Checklist to Review an Academic Paper</div>
+          <div class="checklist-item"><img src="resources/Done_ring_round_fill.svg" alt="check" />Peer Review Checklist</div>
+          <div class="checklist-item"><img src="resources/Done_ring_round_fill.svg" alt="check" />Checklist for Editors, Reviewers, and Authors of SPIE Journals</div>
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial-card google">
+          <div class="brand-row">
+            <img src="resources/google-testimonial.svg" alt="Google" />
+            <div class="stars">
+              <img src="resources/Star_fill.svg" alt="star" />
+              <img src="resources/Star_fill.svg" alt="star" />
+              <img src="resources/Star_fill.svg" alt="star" />
+              <img src="resources/Star_fill.svg" alt="star" />
+              <img src="resources/Star_fill_gray.svg" alt="star" />
+            </div>
+          </div>
+          <div class="reviewer">Samantha Lee</div>
+          <div class="review">The checklist ensures that the review process is thorough</div>
+        </div>
+        <div class="testimonial-card meta">
+          <div class="brand-row">
+            <img src="resources/meta-testimonial.svg" alt="Meta" />
+            <div class="stars">
+              <img src="resources/Star_fill.svg" alt="star" />
+              <img src="resources/Star_fill.svg" alt="star" />
+              <img src="resources/Star_fill.svg" alt="star" />
+              <img src="resources/Star_fill.svg" alt="star" />
+              <img src="resources/Star_fill.svg" alt="star" />
+            </div>
+          </div>
+          <div class="reviewer">Rachel Patel</div>
+          <div class="review">I highly recommend the Writecream Business Description</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="author-info">
+      Coded by <a href="#">Ayokanmi Adejola</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
