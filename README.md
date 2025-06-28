@@ -1,11 +1,11 @@
 
 # Testimonial Page | devChallenges
 
+
+![screenshot](./design/Desktop_1350px.jpg)
 <div align="center">
    Solution for the <a href="https://devchallenges.io/challenge/testimonial-page" target="_blank">Testimonial Page</a> challenge from <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a>.
 </div>
-
-![screenshot](./design/Desktop_1350px.jpg)
 
 
 
@@ -53,5 +53,3 @@ This project is a responsive testimonial page built as part of the devChallenges
 ## 👤 Author
 Coded by **Ayokanmi Adejola**  
 Challenge by [devChallenges.io](https://devchallenges.io/)
-# Testimonial-Page
-# Testimonial-Page
