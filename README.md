@@ -1,19 +1,17 @@
 
-# Testimonial Page | devChallenges
+# Testimonial Page Challenge | devChallenges.io
 
 
 ![screenshot](./design/Desktop_1350px.jpg)
-<div align="center">
-   Solution for the <a href="https://devchallenges.io/challenge/testimonial-page" target="_blank">Testimonial Page</a> challenge from <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a>.
-</div>
-
-
 
 ---
 
 ## Overview
 This project is a responsive testimonial page built as part of the devChallenges.io Testimonial Page challenge. The goal was to replicate a provided design as closely as possible using only HTML and CSS. The page features a clean, modern layout with a left-aligned checklist and staggered testimonial cards for Google and Meta, matching the reference design.
 
+| Desktop | Tablet | Mobile |
+| ------- | ------ | ------ |
+| ![Desktop](./design/Desktop_1350px.jpg) | ![Tablet](./design/Tablet_1024px.jpg) | ![Mobile](./design/Mobile_412px.jpg) |
 
 ## Features
 - Responsive layout for desktop and mobile
@@ -30,7 +28,8 @@ This project is a responsive testimonial page built as part of the devChallenges
 ## Getting Started
 1. Clone the repository:
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/Ayokanmi-Adejola/Testimonial-Page
+   cd testimonial-page
    ```
 2. Open `index.html` in your browser.
 3. All assets are included in the `resources/` and `design/` folders.
@@ -45,11 +44,3 @@ This project is a responsive testimonial page built as part of the devChallenges
 - [devChallenges.io](https://devchallenges.io/)
 - [CSS Tricks: Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Google Fonts: Inter](https://fonts.google.com/specimen/Inter)
-
-
-
----
-
-## 👤 Author
-Coded by **Ayokanmi Adejola**  
-Challenge by [devChallenges.io](https://devchallenges.io/)
